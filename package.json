@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@google/genai": "^2.24.0",
     "@imgly/background-removal": "^1.7.0",
     "react-router-dom": "^7.14.0"
   },
@@ -7,7 +8,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

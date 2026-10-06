@@ -12,8 +12,11 @@ import OurStory from './components/OurStory';
 import WhatDefinesUs from './components/WhatDefinesUs';
 import ProductGallery from './components/ProductGallery';
 import CartPage from './components/Cartpage';
+import CheckoutSuccess, { CheckoutCancel } from './components/CheckoutResult';
+import ReviewOrder from './components/ReviewOrder';
 
-const HIDE_CHROME = ['/studio', '/payment'];
+
+const HIDE_CHROME = ['/studio', '/payment', '/review'];
 
 export default function App() {
   const { pathname } = useLocation();
@@ -33,6 +36,9 @@ export default function App() {
         <Route path="/what-defines-us" element={<WhatDefinesUs />} />
         <Route path="/gallery" element={<ProductGallery />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout/success" element={<CheckoutSuccess />} />
+        <Route path="/checkout/cancel" element={<CheckoutCancel />} />
+        <Route path="/review" element={<ReviewOrder />} />
       </Routes>
 
       {!hideChrome && <Footer />}

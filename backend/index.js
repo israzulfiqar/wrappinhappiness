@@ -15,6 +15,8 @@ app.use('/api/products', require('./routes/product'));
 app.use('/api/studio', require('./routes/studio'));
 app.use('/api/users', require('./routes/user'));
 app.use('/api/orders', require('./routes/order'));
+app.use('/api/recommend', require('./routes/recommend'));
+app.use('/api/stripe', require('./routes/stripe'));
 
 // ─── 3. BASE TEST ROUTE ──────────────────────────────────────────────────────
 app.get('/', (req, res) => {
