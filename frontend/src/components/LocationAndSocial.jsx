@@ -103,7 +103,7 @@ const LocationAndSocial = () => (
         <span style={{
           fontSize: '9px', fontWeight: 700, letterSpacing: '3px',
           textTransform: 'uppercase', color: 'rgba(249,168,212,0.70)',
-        }}>Find Us</span>
+        }}>Contact Us</span>
       </div>
       <h2 style={{
         fontFamily: "'Cormorant Garamond', serif",
@@ -112,10 +112,8 @@ const LocationAndSocial = () => (
         lineHeight: 1.05, letterSpacing: '-0.02em',
         marginBottom: '8px',
       }}>
-        Come find us{' '}
-        <span style={{ fontStyle: 'italic', fontWeight: 400, color: '#F9A8D4' }}>
-          in Hyderabad.
-        </span>
+        Contact us
+       
       </h2>
       <p style={{
         fontSize: '13px', fontWeight: 300,
@@ -223,7 +221,7 @@ const LocationAndSocial = () => (
       {/* ── RIGHT: Social cards ── */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
 
-        {/* "Find Us Online" — large heading replacing pill button */}
+        {/* "Contact Us Online" — large heading replacing pill button */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ width: '24px', height: '1.5px', background: 'rgba(249,168,212,0.45)', borderRadius: '2px', flexShrink: 0 }} />
           <h3 style={{
@@ -235,7 +233,7 @@ const LocationAndSocial = () => (
             margin: 0,
             whiteSpace: 'nowrap',
           }}>
-            <span style={{ color: '#FDE4EE' }}>Find Us </span>
+            <span style={{ color: '#FDE4EE' }}>Contact Us </span>
             <span style={{ fontStyle: 'italic', fontWeight: 400, color: '#F9A8D4' }}>Online.</span>
           </h3>
           <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg, rgba(249,168,212,0.30), transparent)' }} />

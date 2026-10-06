@@ -1263,7 +1263,7 @@ const Studio = () => {
         {/* ════ CENTRE: Canvas ════ */}
         <div
           ref={canvasRef}
-          onClick={() => setSelectedOnCanvas(null)}
+  onMouseDown={() => setSelectedOnCanvas(null)}   // ← was onClick
           style={{
             position: 'relative', overflow: 'hidden',
             background: themeObj
@@ -1311,6 +1311,7 @@ const Studio = () => {
           {/* Floating controls for selected item */}
           {selItem && (
             <div
+                onMouseDown={e => e.stopPropagation()}   // ← add this
               onClick={e => e.stopPropagation()}
               style={{
                 position: 'absolute',
